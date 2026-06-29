@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Paulina Rojas</title>
+  <meta name="description" content="Projects and repositories built by Paulina Rojas.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/carousel.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="icon" type="image/png" href="../assets/logo.png">
+</head>
+<body data-page="projects" data-root="../">
+
+  <div id="nav-mount"></div>
+
+  <main>
+    <section class="page-head">
+      <div class="container">
+        <p class="eyebrow">Work</p>
+        <h1>Projects &amp; <span class="accent">repositories</span></h1>
+        <p>A selection of things I&rsquo;ve built while learning. Pulled together here and linked straight to the source.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+
+        <!-- GitHub connection banner -->
+        <div class="gh-banner">
+          <div class="gh-banner__left">
+            <span class="gh-banner__avatar">
+              <img src="https://cdn.simpleicons.org/github/ffffff" alt="GitHub">
+            </span>
+            <span>
+              <div class="gh-banner__name">Paulina Rojas</div>
+              <div class="gh-banner__handle">@paulina-rojas</div>
+            </span>
+          </div>
+          <div class="gh-banner__status">
+            <span class="gh-banner__dot"></span> Connected to GitHub
+          </div>
+          <a class="btn btn--primary btn--sm" href="https://github.com/paulina-rojas" target="_blank" rel="noopener">
+            View profile <span class="arrow">&rarr;</span>
+          </a>
+        </div>
+
+        <!-- Cards rendered by js/projects.js (includes the dashed placeholder) -->
+        <div class="proj-grid" id="projects-grid"></div>
+
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-mount"></div>
+
+  <script src="../js/tabs.js"></script>
+  <script src="../js/projects.js"></script>
+</body>
+</html>

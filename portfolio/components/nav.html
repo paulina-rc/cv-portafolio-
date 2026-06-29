@@ -1,0 +1,18 @@
+<!-- Shared navigation. Loaded by js/tabs.js into #nav-mount.
+     {{ROOT}} is rewritten per-page (""=home, "../"=sub-pages). -->
+<nav class="site-nav" aria-label="Primary">
+  <div class="site-nav__inner">
+    <a class="brand" href="{{ROOT}}index.html" aria-label="Paulina Rojas — home">
+      <img class="brand__mark" src="{{ROOT}}assets/logo.png" alt="PR monogram logo">
+      <span class="brand__text">
+        <span class="brand__name">Paulina Rojas</span>
+        <span class="brand__role">Web Developer · Student</span>
+      </span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="{{ROOT}}index.html" data-nav="home">Home</a></li>
+      <li><a href="{{ROOT}}pages/certificates.html" data-nav="certificates">Certificates</a></li>
+      <li><a href="{{ROOT}}pages/projects.html" data-nav="projects">Projects</a></li>
+    </ul>
+  </div>
+</nav>
