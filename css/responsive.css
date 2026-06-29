@@ -1,0 +1,53 @@
+/* ============================================================
+   responsive.css — tablet & mobile media queries
+   ============================================================ */
+
+/* ---- Tablet ---- */
+@media (max-width: 900px) {
+  .section { padding-block: 64px; }
+
+  .hero { padding-block: 64px 56px; }
+  .hero__grid { grid-template-columns: 1fr; gap: 36px; }
+  .hero__mark { order: -1; justify-items: center; }
+  .hero__mark img { width: 280px; }
+
+  .summary { grid-template-columns: 1fr; }
+  .contact-grid { grid-template-columns: repeat(2, 1fr); }
+  .skill-row { grid-template-columns: 200px 1fr; gap: 28px; }
+}
+
+/* ---- Mobile ---- */
+@media (max-width: 600px) {
+  body { font-size: 15px; }
+  .container { padding-inline: 20px; }
+  .section { padding-block: 52px; }
+
+  /* Nav collapses: brand text hides role, links wrap */
+  .site-nav__inner { flex-direction: column; gap: 12px; }
+  .nav-links { width: 100%; justify-content: center; }
+  .nav-links a { padding: 8px 13px; font-size: 13.5px; }
+
+  .hero h1 { font-size: clamp(40px, 13vw, 56px); }
+  .hero__bio { font-size: 16px; }
+  .hero__cta { width: 100%; }
+  .hero__cta .btn { flex: 1; justify-content: center; }
+
+  .contact-grid { grid-template-columns: 1fr; }
+  .skill-grid { grid-template-columns: repeat(auto-fill, minmax(125px, 1fr)); }
+  .skill-row { grid-template-columns: 1fr; gap: 16px; padding: 28px 0; }
+  .cert-grid,
+  .proj-grid { grid-template-columns: 1fr; }
+
+  .gh-banner { flex-direction: column; align-items: flex-start; }
+
+  .site-footer__bottom-inner { flex-direction: column; align-items: flex-start; }
+  .footer-links { flex-wrap: wrap; gap: 12px; }
+
+  .page-head { padding-block: 52px 32px; }
+}
+
+/* ---- Small phones ---- */
+@media (max-width: 380px) {
+  .brand__role { display: none; }
+  .carousel__item { padding: 12px 16px; }
+}

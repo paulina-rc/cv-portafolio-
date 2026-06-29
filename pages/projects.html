@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Paulina Rojas</title>
+  <meta name="description" content="Projects and repositories built by Paulina Rojas.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/carousel.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="icon" type="image/png" href="../assets/logo%20personal%20sin%20fondo%20.png">
+</head>
+<body data-page="projects" data-root="../">
+
+  <nav class="site-nav" aria-label="Primary">
+    <div class="site-nav__inner">
+      <a class="brand" href="../index.html" aria-label="Paulina Rojas — home">
+        <img class="brand__mark" src="../assets/logo%20personal%20sin%20fondo%20.png" alt="PR monogram logo">
+        <span class="brand__text">
+          <span class="brand__name">Paulina Rojas</span>
+          <span class="brand__role">Web Developer · Student</span>
+        </span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="../index.html" data-nav="home">Home</a></li>
+        <li><a href="../pages/certificates.html" data-nav="certificates">Certificates</a></li>
+        <li><a href="../pages/projects.html" data-nav="projects">Projects</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="page-head">
+      <div class="container">
+        <p class="eyebrow">Work</p>
+        <h1>Projects &amp; <span class="accent">repositories</span></h1>
+        <p>A selection of things I&rsquo;ve built while learning. Pulled together here and linked straight to the source.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+
+        <!-- GitHub connection banner -->
+        <div class="gh-banner">
+          <div class="gh-banner__left">
+            <span class="gh-banner__avatar">
+              <img src="https://cdn.simpleicons.org/github/ffffff" alt="GitHub">
+            </span>
+            <span>
+              <div class="gh-banner__name">Paulina Rojas</div>
+              <div class="gh-banner__handle">@paulina-rojas</div>
+            </span>
+          </div>
+          <div class="gh-banner__status">
+            <span class="gh-banner__dot"></span> Connected to GitHub
+          </div>
+          <a class="btn btn--primary btn--sm" href="https://github.com/paulina-rojas" target="_blank" rel="noopener">
+            View profile <span class="arrow">&rarr;</span>
+          </a>
+        </div>
+
+        <!-- Cards rendered by js/projects.js (includes the dashed placeholder) -->
+        <div class="proj-grid" id="projects-grid"></div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__bottom">
+      <div class="site-footer__bottom-inner">
+        <span class="copyright">© 2026 Paulina Rojas</span>
+        <nav class="footer-links" aria-label="Footer">
+          <a href="../index.html">Home</a>
+          <a href="../pages/certificates.html">Certificates</a>
+          <a href="../pages/projects.html">Projects</a>
+          <a href="../index.html#contact">Contact</a>
+        </nav>
+        <div class="social-row">
+          <a href="https://github.com/paulina-rojas" target="_blank" rel="noopener" aria-label="GitHub">
+            <img src="https://cdn.simpleicons.org/github/ffffff" alt="" width="18" height="18">
+          </a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#ffffff" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+          </a>
+          <a href="mailto:paulina.rojas@gmail.com" aria-label="Gmail">
+            <img src="https://cdn.simpleicons.org/gmail/ffffff" alt="" width="18" height="18">
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/tabs.js"></script>
+  <script src="../js/projects.js"></script>
+</body>
+</html>

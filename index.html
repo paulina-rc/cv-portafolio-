@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paulina Rojas — Web Developer & Student</title>
+  <meta name="description" content="Personal portfolio of Paulina Rojas, a 16-year-old web development student passionate about clean code and creative problem solving.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/carousel.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="icon" type="image/png" href="assets/logo%20personal%20sin%20fondo%20.png">
+</head>
+<body data-page="home" data-root="">
+
+  <nav class="site-nav" aria-label="Primary">
+    <div class="site-nav__inner">
+      <a class="brand" href="index.html" aria-label="Paulina Rojas — home">
+        <img class="brand__mark" src="assets/logo%20personal%20sin%20fondo%20.png" alt="PR monogram logo">
+        <span class="brand__text">
+          <span class="brand__name">Paulina Rojas</span>
+          <span class="brand__role">Web Developer · Student</span>
+        </span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" data-nav="home">Home</a></li>
+        <li><a href="pages/certificates.html" data-nav="certificates">Certificates</a></li>
+        <li><a href="pages/projects.html" data-nav="projects">Projects</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <header class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <h1>Paulina<br><span class="last">Rojas</span></h1>
+          <p class="hero__sub">Web Developer · Student</p>
+          <p class="hero__bio">16-year-old web development student passionate about clean code and creative problem solving.</p>
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="pages/projects.html">View projects <span class="arrow">&rarr;</span></a>
+            <a class="btn btn--ghost" href="#contact">Get in touch</a>
+          </div>
+        </div>
+        <div class="hero__mark">
+          <img src="assets/logo%20personal%20sin%20fondo%20.png" alt="PR monogram inside an orbital ring">
+        </div>
+      </div>
+    </header>
+
+    <!-- ============ SUMMARY CARDS ============ -->
+    <section class="section section--tight" aria-label="Highlights">
+      <div class="container">
+        <div class="summary">
+          <div class="card summary__card">
+            <span class="summary__num">10+</span>
+            <span class="summary__label">Technologies</span>
+            <span class="summary__note">Languages, frameworks &amp; tools in active use.</span>
+          </div>
+          <div class="card summary__card">
+            <span class="summary__num">Agile</span>
+            <span class="summary__label">Scrum Certified</span>
+            <span class="summary__note">Scrum Methodologies — Scrum Alliance, 2024.</span>
+          </div>
+          <div class="card summary__card">
+            <span class="summary__num">2</span>
+            <span class="summary__label">Bilingual</span>
+            <span class="summary__note">Spanish (native) &amp; English (B1).</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CAROUSEL ============ -->
+    <section class="section--tight" aria-label="Technologies I work with">
+      <div class="container">
+        <p class="eyebrow" style="justify-content:center">Technologies I work with</p>
+      </div>
+      <div class="carousel">
+        <div class="carousel__track" id="carousel-track"><!-- built by js/carousel.js --></div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section" id="skills" aria-label="Skills">
+      <div class="container">
+        <p class="eyebrow">Skills</p>
+        <h2 class="section-title">What I bring to a team</h2>
+        <p class="section-lead">Technical and human skills, organized by where they fit.</p>
+
+        <div class="skill-rows">
+
+          <!-- Programming -->
+          <div class="skill-row">
+            <div class="skill-row__head">
+              <span class="skill-row__index">01</span>
+              <h3 class="skill-row__title">Programming</h3>
+              <span class="skill-row__count">Languages &amp; frameworks</span>
+            </div>
+            <div class="skill-row__items">
+              <span class="skill-pill"><img class="tech" src="https://cdn.simpleicons.org/openjdk" alt="" loading="lazy"> Java</span>
+              <span class="skill-pill"><img class="tech" src="https://cdn.simpleicons.org/python" alt="" loading="lazy"> Python</span>
+              <span class="skill-pill"><img class="tech" src="https://cdn.simpleicons.org/javascript" alt="" loading="lazy"> JavaScript</span>
+              <span class="skill-pill"><img class="tech" src="https://cdn.simpleicons.org/php" alt="" loading="lazy"> PHP</span>
+              <span class="skill-pill"><img class="tech" src="https://cdn.simpleicons.org/cplusplus" alt="" loading="lazy"> C++</span>
+              <span class="skill-pill"><img class="tech" src="https://cdn.simpleicons.org/mysql" alt="" loading="lazy"> SQL</span>
+              <span class="skill-pill"><img class="tech" src="https://cdn.simpleicons.org/html5" alt="" loading="lazy"> HTML</span>
+              <span class="skill-pill"><img class="tech" src="https://cdn.simpleicons.org/css" alt="" loading="lazy"> CSS</span>
+              <span class="skill-pill"><img class="tech" src="https://cdn.simpleicons.org/flask/1C1C1C" alt="" loading="lazy"> Flask</span>
+            </div>
+          </div>
+
+          <!-- Tools -->
+          <div class="skill-row">
+            <div class="skill-row__head">
+              <span class="skill-row__index">02</span>
+              <h3 class="skill-row__title">Tools</h3>
+              <span class="skill-row__count">Daily workflow</span>
+            </div>
+            <div class="skill-row__items">
+              <span class="skill-pill"><img class="tech" src="https://cdn.simpleicons.org/git" alt="" loading="lazy"> Git</span>
+              <span class="skill-pill"><img class="tech" src="https://cdn.simpleicons.org/github/1C1C1C" alt="" loading="lazy"> GitHub</span>
+              <span class="skill-pill"><img class="tech" src="https://cdn.simpleicons.org/figma" alt="" loading="lazy"> Figma</span>
+            </div>
+          </div>
+
+          <!-- Soft skills -->
+          <div class="skill-row">
+            <div class="skill-row__head">
+              <span class="skill-row__index">03</span>
+              <h3 class="skill-row__title">Soft Skills</h3>
+              <span class="skill-row__count">How I work with people</span>
+            </div>
+            <div class="skill-row__items">
+              <span class="skill-pill"><span class="dot"></span> Communication</span>
+              <span class="skill-pill"><span class="dot"></span> Planning</span>
+              <span class="skill-pill"><span class="dot"></span> Emotional intelligence</span>
+              <span class="skill-pill"><span class="dot"></span> Teamwork</span>
+            </div>
+          </div>
+
+          <!-- Spoken languages -->
+          <div class="skill-row">
+            <div class="skill-row__head">
+              <span class="skill-row__index">04</span>
+              <h3 class="skill-row__title">Languages</h3>
+              <span class="skill-row__count">Where I&rsquo;m fluent</span>
+            </div>
+            <div class="skill-row__items">
+              <span class="skill-pill"><img class="flag" src="https://flagcdn.com/cl.svg" alt="Chile" loading="lazy"> Spanish <span class="lvl">Native</span></span>
+              <span class="skill-pill"><img class="flag" src="https://flagcdn.com/us.svg" alt="United States" loading="lazy"> English <span class="lvl">B1</span></span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact" aria-label="Contact">
+      <div class="container">
+        <p class="eyebrow">Contact</p>
+        <h2 class="section-title">Let&rsquo;s build something</h2>
+        <p class="section-lead">Open to collaboration, learning opportunities and a good conversation about code.</p>
+
+        <div class="contact-grid" style="margin-top:36px">
+          <a class="card contact-card" href="mailto:paulina.rojas@gmail.com">
+            <div class="contact-card__top">
+              <span class="contact-card__icon"><img src="https://cdn.simpleicons.org/gmail" alt="Gmail"></span>
+              <span class="arrow-pill" aria-hidden="true">&rarr;</span>
+            </div>
+            <div>
+              <div class="contact-card__label">Gmail</div>
+              <div class="contact-card__handle">paulina.rojas@gmail.com</div>
+            </div>
+          </a>
+
+          <a class="card contact-card" href="https://www.linkedin.com/" target="_blank" rel="noopener">
+            <div class="contact-card__top">
+              <span class="contact-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="#0A66C2" aria-label="LinkedIn" role="img"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></span>
+              <span class="arrow-pill" aria-hidden="true">&rarr;</span>
+            </div>
+            <div>
+              <div class="contact-card__label">LinkedIn</div>
+              <div class="contact-card__handle">in/paulina-rojas</div>
+            </div>
+          </a>
+
+          <a class="card contact-card" href="https://github.com/paulina-rojas" target="_blank" rel="noopener">
+            <div class="contact-card__top">
+              <span class="contact-card__icon"><img src="https://cdn.simpleicons.org/github/1C1C1C" alt="GitHub"></span>
+              <span class="arrow-pill" aria-hidden="true">&rarr;</span>
+            </div>
+            <div>
+              <div class="contact-card__label">GitHub</div>
+              <div class="contact-card__handle">@paulina-rojas</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__bottom">
+      <div class="site-footer__bottom-inner">
+        <span class="copyright">© 2026 Paulina Rojas</span>
+        <nav class="footer-links" aria-label="Footer">
+          <a href="index.html">Home</a>
+          <a href="pages/certificates.html">Certificates</a>
+          <a href="pages/projects.html">Projects</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+        <div class="social-row">
+          <a href="https://github.com/paulina-rojas" target="_blank" rel="noopener" aria-label="GitHub">
+            <img src="https://cdn.simpleicons.org/github/ffffff" alt="" width="18" height="18">
+          </a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#ffffff" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+          </a>
+          <a href="mailto:paulina.rojas@gmail.com" aria-label="Gmail">
+            <img src="https://cdn.simpleicons.org/gmail/ffffff" alt="" width="18" height="18">
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/tabs.js"></script>
+  <script src="js/carousel.js"></script>
+</body>
+</html>
