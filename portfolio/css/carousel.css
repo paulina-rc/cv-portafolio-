@@ -1,0 +1,56 @@
+/* ============================================================
+   carousel.css — infinite auto-scrolling tech marquee
+   ============================================================ */
+.carousel {
+  position: relative;
+  overflow: hidden;
+  padding-block: 8px;
+  /* fade edges */
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 9%, #000 91%, transparent);
+          mask-image: linear-gradient(90deg, transparent, #000 9%, #000 91%, transparent);
+}
+
+.carousel__track {
+  display: flex;
+  width: max-content;
+  gap: 18px;
+  animation: carousel-scroll 34s linear infinite;
+  will-change: transform;
+}
+
+/* Pause on hover (whole strip) */
+.carousel:hover .carousel__track { animation-play-state: paused; }
+
+.carousel__item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: none;
+  padding: 14px 22px;
+  background: var(--bg-elev);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  box-shadow: var(--shadow-sm);
+}
+.carousel__item img {
+  width: 24px;
+  height: 24px;
+  flex: none;
+}
+.carousel__item span {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+  white-space: nowrap;
+}
+
+/* The track holds two identical halves; translating -50% loops seamlessly */
+@keyframes carousel-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .carousel__track { animation: none; }
+  .carousel { overflow-x: auto; }
+}
