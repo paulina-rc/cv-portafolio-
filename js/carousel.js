@@ -17,7 +17,7 @@
     ["Python",     "python"],
     ["PHP",        "php"],
     ["SQL",        "mysql"],
-    ["C++",        "cplusplus"],
+
     ["HTML",       "html5"],
     ["CSS",        "css"],
     ["Flask",      "flask"],
