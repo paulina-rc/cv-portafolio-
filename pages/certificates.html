@@ -47,33 +47,102 @@
       <div class="container">
         <div class="cert-grid">
 
-          <!-- Real certificate -->
+          <!-- Scrum Fundamentals Certified -->
           <article class="card cert-card">
             <div class="cert-card__head">
               <div class="cert-issuer">
-                <span class="cert-issuer__logo">
-                  <img src="https://cdn.simpleicons.org/scrumalliance/1C1C1C" alt="Scrum Alliance" loading="lazy">
-                </span>
+                <span class="cert-issuer__logo cert-issuer__logo--initials" aria-hidden="true">S</span>
                 <span>
-                  <span class="cert-issuer__name">Scrum Alliance</span><br>
-                  <span class="cert-issuer__year">Issued 2024</span>
+                  <span class="cert-issuer__name">SCRUMstudy (VMEdu)</span>
+                  <span class="cert-issuer__year">Issued April 16, 2025</span>
                 </span>
               </div>
               <span class="badge">Agile</span>
             </div>
-            <h2 class="cert-card__title">Scrum Methodologies</h2>
-            <p class="cert-card__desc">Foundations of agile project management: roles, ceremonies, artifacts and the iterative Scrum framework for delivering value.</p>
+            <h2 class="cert-card__title">Scrum Fundamentals Certified</h2>
+            <p class="cert-card__desc">Foundations of Scrum: roles, the Scrum framework, and core principles of agile project delivery, certified by SCRUMstudy.</p>
             <div class="cert-card__foot">
-              <span class="badge badge--line">2024</span>
-              <a class="btn btn--ghost btn--sm" href="#" target="_blank" rel="noopener">View <span class="arrow">&rarr;</span></a>
+              <span class="badge badge--line">2025</span>
+              <button class="btn btn--ghost btn--sm cert-view-btn"
+                      data-pdf="../assets/certificates/scrum-fundamentals.pdf"
+                      data-title="Scrum Fundamentals Certified">
+                View <span class="arrow">&rarr;</span>
+              </button>
             </div>
           </article>
 
+          <!-- IT Communication Technologies Operator -->
+          <article class="card cert-card">
+            <div class="cert-card__head">
+              <div class="cert-issuer">
+                <span class="cert-issuer__logo cert-issuer__logo--initials" aria-hidden="true">INA</span>
+                <span>
+                  <span class="cert-issuer__name">INA — Instituto Nacional de Aprendizaje</span>
+                  <span class="cert-issuer__year">Issued November 19, 2025</span>
+                </span>
+              </div>
+              <span class="badge">IT Training</span>
+            </div>
+            <h2 class="cert-card__title">IT Communication Technologies Operator</h2>
+            <p class="cert-card__desc">260-hour qualified-worker program covering information and communication technology operations, issued by Costa Rica's National Learning Institute.</p>
+            <div class="cert-card__foot">
+              <span class="badge badge--line">2025</span>
+              <button class="btn btn--ghost btn--sm cert-view-btn"
+                      data-pdf="../assets/certificates/ina-tecnologias-informacion.pdf"
+                      data-title="IT Communication Technologies Operator">
+                View <span class="arrow">&rarr;</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Python Essentials 1 -->
+          <article class="card cert-card">
+            <div class="cert-card__head">
+              <div class="cert-issuer">
+                <span class="cert-issuer__logo">
+                  <img src="../assets/certificates/cisco-python-essentials-badge.png"
+                       alt="Cisco Networking Academy" loading="lazy">
+                </span>
+                <span>
+                  <span class="cert-issuer__name">Cisco Networking Academy</span>
+                  <span class="cert-issuer__year">Issued June 30, 2026</span>
+                </span>
+              </div>
+              <span class="badge">Programming</span>
+            </div>
+            <h2 class="cert-card__title">Python Essentials 1</h2>
+            <p class="cert-card__desc">Core Python 3 programming: syntax, control structures, functions, and the standard library, verified by Cisco Networking Academy.</p>
+            <div class="cert-card__foot">
+              <span class="badge badge--line">2026</span>
+              <button class="btn btn--ghost btn--sm cert-view-btn"
+                      data-pdf="../assets/certificates/cisco-python-essentials.pdf"
+                      data-title="Python Essentials 1">
+                View <span class="arrow">&rarr;</span>
+              </button>
+            </div>
+          </article>
 
         </div>
       </div>
     </section>
   </main>
+
+  <!-- Certificate preview modal -->
+  <div class="cert-modal" id="certModal" role="dialog" aria-modal="true" aria-labelledby="certModalTitle" hidden>
+    <div class="cert-modal__backdrop"></div>
+    <div class="cert-modal__dialog">
+      <div class="cert-modal__head">
+        <h2 class="cert-modal__title" id="certModalTitle"></h2>
+        <button class="cert-modal__close" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="cert-modal__body">
+        <iframe class="cert-modal__frame" title="Certificate PDF"></iframe>
+      </div>
+      <div class="cert-modal__foot">
+        <a class="btn btn--ghost btn--sm cert-modal__download" href="#">Download PDF</a>
+      </div>
+    </div>
+  </div>
 
   <footer class="site-footer">
     <div class="site-footer__bottom">
@@ -101,5 +170,6 @@
   </footer>
 
   <script src="../js/tabs.js"></script>
+  <script src="../js/certificates.js"></script>
 </body>
 </html>
