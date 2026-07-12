@@ -33,7 +33,7 @@
     .proj-modal { position: fixed; inset: 0; z-index: 200; display: flex; align-items: center; justify-content: center; padding: 20px; }
     .proj-modal[hidden] { display: none; }
     .proj-modal__backdrop { position: absolute; inset: 0; background: rgba(0, 0, 0, .6); }
-    .proj-modal__dialog { position: relative; z-index: 1; background: var(--bg-elev); border-radius: var(--radius); box-shadow: var(--shadow-md); width: 100%; max-width: 640px; max-height: 90vh; overflow-y: auto; }
+    .proj-modal__dialog { position: relative; z-index: 1; background: var(--bg-elev); border-radius: var(--radius); box-shadow: var(--shadow-md); width: 100%; max-width: min(900px, 92vw); max-height: 92vh; overflow-y: auto; }
     .proj-modal__close {
       position: absolute; top: 14px; right: 14px;
       width: 36px; height: 36px; border-radius: 50%;
@@ -43,13 +43,30 @@
       transition: background .2s var(--ease), color .2s var(--ease), border-color .2s var(--ease);
     }
     .proj-modal__close:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
-    .proj-modal__preview { width: 100%; aspect-ratio: 16 / 10; overflow: hidden; border-radius: var(--radius) var(--radius) 0 0; }
-    .proj-modal__preview img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .proj-modal__preview { width: 100%; overflow: hidden; border-radius: var(--radius) var(--radius) 0 0; background: var(--accent-soft); display: flex; justify-content: center; }
+    .proj-modal__preview img { max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain; display: block; margin: 0 auto; }
     .proj-modal__body { padding: 24px; }
     .proj-modal__title { font-family: var(--font-head); font-size: 24px; margin: 0 0 12px; }
     .proj-modal__desc { color: var(--muted); font-size: 14.5px; margin: 0 0 18px; }
     .proj-modal__stack { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 22px; }
     .proj-modal__foot { display: flex; justify-content: flex-end; gap: 10px; }
+
+    @media (max-width: 900px) {
+      .proj-modal__dialog { max-width: 92vw; }
+      .proj-modal__preview img { max-height: 55vh; }
+      .proj-modal__body { padding: 20px; }
+    }
+
+    @media (max-width: 600px) {
+      .proj-modal__dialog { max-width: 95vw; }
+      .proj-modal__preview img { max-height: 50vh; }
+      .proj-modal__body { padding: 16px; }
+      .proj-modal__title { font-size: 18px; }
+      .proj-modal__desc { font-size: 13px; }
+      .proj-modal__stack { gap: 6px; }
+      .proj-modal__foot { flex-direction: column; gap: 8px; }
+      .proj-modal__foot .btn { width: 100%; justify-content: center; }
+    }
   </style>
 </head>
 <body data-page="projects" data-root="../">
