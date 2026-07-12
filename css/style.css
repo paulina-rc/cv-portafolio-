@@ -484,12 +484,12 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
   position: fixed;
   inset: 0;
   z-index: 200;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   padding: 20px;
 }
-.cert-modal[hidden] { display: none; }
+.cert-modal:not([hidden]) { display: flex; }
 
 .cert-modal__backdrop {
   position: absolute;

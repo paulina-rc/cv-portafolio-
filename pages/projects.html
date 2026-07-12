@@ -18,8 +18,8 @@
     /* Page-scoped: project cards + preview modal (built on the shared design tokens in style.css) */
     .proj-grid { display: flex; justify-content: center; margin-top: 26px; }
     .proj-card { width: 100%; max-width: 420px; padding: 0; overflow: hidden; display: flex; flex-direction: column; }
-    .proj-card__preview { width: 100%; aspect-ratio: 16 / 10; overflow: hidden; background: var(--accent-soft); border-radius: var(--radius) var(--radius) 0 0; }
-    .proj-card__preview img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .35s var(--ease); }
+    .proj-card__preview { width: 100%; overflow: hidden; background: var(--accent-soft); border-radius: var(--radius) var(--radius) 0 0; }
+    .proj-card__preview img { width: 100%; height: auto; display: block; transition: transform .35s var(--ease); }
     .proj-card:hover .proj-card__preview img { transform: scale(1.04); }
     .proj-card__body { padding: 20px 22px 22px; display: flex; flex-direction: column; gap: 14px; }
     .proj-repo { display: flex; align-items: center; gap: 9px; font-size: 13px; color: var(--muted); }
@@ -30,8 +30,8 @@
     .proj-pill { font-size: 12px; padding: 4px 10px; border: 1px solid var(--line-strong); border-radius: 999px; color: var(--muted); }
     .proj-card__foot { display: flex; align-items: center; justify-content: space-between; padding-top: 4px; }
 
-    .proj-modal { position: fixed; inset: 0; z-index: 200; display: flex; align-items: center; justify-content: center; padding: 20px; }
-    .proj-modal[hidden] { display: none; }
+    .proj-modal { position: fixed; inset: 0; z-index: 200; display: none; align-items: center; justify-content: center; padding: 20px; }
+    .proj-modal:not([hidden]) { display: flex; }
     .proj-modal__backdrop { position: absolute; inset: 0; background: rgba(0, 0, 0, .6); }
     .proj-modal__dialog { position: relative; z-index: 1; background: var(--bg-elev); border-radius: var(--radius); box-shadow: var(--shadow-md); width: 100%; max-width: min(900px, 92vw); max-height: 92vh; overflow-y: auto; }
     .proj-modal__close {
