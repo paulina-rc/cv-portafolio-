@@ -1,0 +1,29 @@
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Rounded cream background -->
+  <rect width="500" height="500" rx="90" ry="90" fill="#F7F3EF"/>
+
+  <!-- Arc 1: long arc -->
+  <path
+    d="M 345.2 108.2 A 165 165 0 1 0 154.8 391.8"
+    fill="none" stroke="#1C1C1C" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- Arc 2: short arc -->
+  <path
+    d="M 137.2 403.5 A 165 165 0 0 0 362.8 96.5"
+    fill="none" stroke="#1C1C1C" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- Top-right dot in copper -->
+  <circle cx="366.7" cy="133.3" r="18" fill="#C4956A"/>
+  <!-- Bottom-left dot in charcoal -->
+  <circle cx="133.3" cy="366.7" r="18" fill="#1C1C1C"/>
+
+  <!-- P -->
+  <text x="148" y="322"
+    font-family="'Playfair Display', Georgia, serif"
+    font-size="215" font-weight="400" fill="#1C1C1C">P</text>
+
+  <!-- R -->
+  <text x="236" y="344"
+    font-family="'Playfair Display', Georgia, serif"
+    font-size="178" font-weight="400" fill="#C4956A">R</text>
+</svg>
