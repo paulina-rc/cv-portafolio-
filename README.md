@@ -67,20 +67,6 @@ cv-portafolio-/
 - **IT Communication Technologies Operator** — INA Costa Rica (2025)
 - **Python Essentials 1** — Cisco Networking Academy (2026)
 
-## Running Locally
-
-```bash
-# Clone the repo
-git clone https://github.com/paulina-rc/cv-portafolio-.git
-cd cv-portafolio-
-
-# Start a local server (Python)
-python server.py
-
-# Then open http://localhost:8000
-```
-
-A local server is required because the site uses `fetch()` to load shared components (nav and footer), which doesn't work when opening HTML files directly.
 
 ## Contact
 
